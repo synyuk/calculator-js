@@ -5,14 +5,17 @@ let reset = document.querySelector('.reset');
 buttons.forEach(item => {
     item.addEventListener("click", () => {
         let num = item.innerHTML;
-        display.value = "";
-        // if(!isNaN(num)){                    
+        if (display.value === "0") {
+            display.value = num;
+        } else {
             display.value += num;
-        //}
-        
+        }               
     });    
 });
 
+document.addEventListener("click", () => {
+   
+})
 
 reset.addEventListener('click', () => {
     display.value = 0;
