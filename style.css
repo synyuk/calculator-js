@@ -69,12 +69,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     background-color: #6e70fd;
   }
   
-  .operator {
+  .operator:not(.koma) {
     background-color: yellow;
     color: #000;
   }
   
-  .operator:hover {
+  .operator:not(.koma):hover {
     background-color: #ffff83;
   }
   
@@ -86,8 +86,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     background-color: #8e8e8e;
   }
   
-  .zero {
-    grid-column: span 2;
+  .reset {
+    grid-column: span 4;
     text-align: center;
+    background: red;
   }
   
+  .reset:hover{
+    background: #f84242;
+  }
